@@ -1,0 +1,42 @@
+<h1>Earning</h1>
+
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><%= link_to 'View list', earnings_path %></li>
+  <li><%= link_to 'New Earning', new_earning_path %></li>
+</ul>
+
+<br>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Business</th>
+      <th>Amount</th>
+      <th>User</th>
+      <th>Date</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @earnings.each do |earning| %>
+      <tr>
+        <td><%= earning.business %></td>
+        <td><%= earning.amount %></td>
+        <td><%= earning.user_id %></td>
+        <td><%= earning.date %></td>
+        <td><%= link_to 'Show', earning, class: 'btn btn-primary btn-sm' %></td>
+        <td><%= link_to 'Edit', edit_earning_path(earning), class: 'btn btn-info btn-sm' %></td>
+        <td><%= link_to 'Destroy', earning, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to new_earning_path, class: 'btn btn-success' do %>
+  <i class="glyphicon glyphicon-plus"></i> New Earning
+<% end %>

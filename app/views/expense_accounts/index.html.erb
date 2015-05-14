@@ -1,0 +1,43 @@
+<h1>Expenses</h1>
+
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><%= link_to 'View list', expense_accounts_path %></li>
+  <li><%= link_to 'New Expenses', new_expense_account_path %></li>
+</ul>
+
+<br>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Amount</th>
+      <th>User</th>
+      <th>Date</th>
+      <th>Description</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @expense_accounts.each do |expense_account| %>
+      <tr>
+        <td><%= expense_account.amount %></td>
+        <td><%= expense_account.user_id %></td>
+        <td><%= expense_account.date %></td>
+        <td><%= expense_account.description %></td>
+        <td><%= link_to 'Show', expense_account, class: 'btn btn-primary btn-sm' %></td>
+        <td><%= link_to 'Edit', edit_expense_account_path(expense_account), class: 'btn btn-info btn-sm' %></td>
+        <td><%= link_to 'Destroy', expense_account, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to new_expense_account_path, class: 'btn btn-success' do %>
+  <i class="glyphicon glyphicon-plus"></i> New Expense
+<% end %>
+

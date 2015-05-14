@@ -1,0 +1,10 @@
+<h1>EMI</h1>
+
+<ul class="nav nav-tabs" role="tablist">
+  <li><%= link_to 'View list', room_emis_path %></li>
+  <li class="active"><%= link_to 'New Earning', new_room_emi_path %></li>
+</ul>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', room_emis_path, class: 'btn btn-default btn-sm' %>

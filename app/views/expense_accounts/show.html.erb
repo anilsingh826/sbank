@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="row">
+    <p>
+      <div class="col-xs-1">
+        <strong>Amount:</strong>
+      </div>
+      <div class="col-xs-6">
+        <%= @expense_account.amount %>
+      </div>  
+    </p>
+  </div>
+
+  <div class="row">
+    <p>
+      <div class="col-xs-1">
+        <strong>Date:</strong>
+      </div>
+      <div class="col-xs-6">
+        <%= @expense_account.date %>
+      </div>  
+    </p>
+  </div>
+  
+  <div class="row">
+    <p>
+      <div class="col-xs-1">
+        <strong>Description:</strong>
+      </div>
+      <div class="col-xs-6">
+        <%= @expense_account.title %>
+      </div>  
+    </p>
+  </div>
+</div>
+<%= link_to 'Edit', edit_expense_account_path(@expense_account), class: 'btn btn-info btn-sm' %> |
+<%= link_to 'Back', expense_accounts_path, class: 'btn btn-default btn-sm' %>
+

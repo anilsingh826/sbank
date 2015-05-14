@@ -1,0 +1,38 @@
+<%= form_for(@room_emi, html: {class: 'form-horizontal'}) do |f| %>
+  <% if @room_emi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@room_emi.errors.count, "error") %> prohibited this todo from being saved:</h2>
+
+      <ul>
+      <% @room_emi.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= f.label :title, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :title, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="field form-group">
+    <%= f.label :amount, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :amount, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="field form-group">
+    <%= f.label :date, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.datetime_select :date, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="actions form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit %>
+    </div>
+  </div>
+<% end %>
+

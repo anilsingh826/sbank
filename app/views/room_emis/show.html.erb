@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="row">
+    <p>
+      <div class="col-xs-1">
+        <strong>Title:</strong>
+      </div>
+      <div class="col-xs-6">
+        <%= @room_emi.title %>
+      </div>  
+    </p>
+  </div>
+
+  <div class="row">
+    <p>
+      <div class="col-xs-1">
+        <strong>Amount:</strong>
+      </div>
+      <div class="col-xs-6">
+        <%= @room_emi.amount %>
+      </div>  
+    </p>
+  </div>
+
+  <div class="row">
+    <p>
+      <div class="col-xs-1">
+        <strong>Date:</strong>
+      </div>
+      <div class="col-xs-6">
+        <%= @room_emi.date %>
+      </div>  
+    </p>
+  </div> 
+</div>
+<%= link_to 'Edit', edit_room_emi_path(@room_emi), class: 'btn btn-info btn-sm' %> |
+<%= link_to 'Back', room_emis_path, class: 'btn btn-default btn-sm' %>

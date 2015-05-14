@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="row">
+    <p>
+      <div class="col-xs-1">
+        <strong>Business:</strong>
+      </div>
+      <div class="col-xs-6">
+        <%= @earning.business %>
+      </div>  
+    </p>
+  </div>
+
+  <div class="row">
+    <p>
+      <div class="col-xs-1">
+        <strong>Amount:</strong>
+      </div>
+      <div class="col-xs-6">
+        <%= @earning.amount %>
+      </div>  
+    </p>
+  </div>
+
+  <div class="row">
+    <p>
+      <div class="col-xs-1">
+        <strong>Date:</strong>
+      </div>
+      <div class="col-xs-6">
+        <%= @earning.date %>
+      </div>  
+    </p>
+  </div> 
+</div>
+<%= link_to 'Edit', edit_earning_path(@earning), class: 'btn btn-info btn-sm' %> |
+<%= link_to 'Back', earnings_path, class: 'btn btn-default btn-sm' %>
