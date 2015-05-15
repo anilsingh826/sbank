@@ -15,7 +15,7 @@ gem 'spring',        group: :development
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'unicorn'
 # gem 'capistrano-rails', group: :development
-gem 'debugger', group: [:development, :test]
+#gem 'debugger', group: [:development, :test]
 
 group :assets do
   gem 'twitter-bootstrap-rails'

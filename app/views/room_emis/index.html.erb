@@ -12,7 +12,6 @@
     <tr>
       <th>Title</th>
       <th>Amount</th>
-      <th>User</th>
       <th>Date</th>
       <th>&nbsp;</th>
       <th>&nbsp;</th>
@@ -25,8 +24,7 @@
       <tr>
         <td><%= room_emi.title %></td>
         <td><%= room_emi.amount %></td>
-        <td><%= room_emi.user_id %></td>
-        <td><%= room_emi.date %></td>
+        <td><%= room_emi.date_format %></td>
         <td><%= link_to 'Show', room_emi, class: 'btn btn-primary btn-sm' %></td>
         <td><%= link_to 'Edit', edit_room_emi_path(room_emi), class: 'btn btn-info btn-sm' %></td>
         <td><%= link_to 'Destroy', room_emi, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>

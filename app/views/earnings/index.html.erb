@@ -12,7 +12,6 @@
     <tr>
       <th>Business</th>
       <th>Amount</th>
-      <th>User</th>
       <th>Date</th>
       <th>&nbsp;</th>
       <th>&nbsp;</th>
@@ -25,8 +24,7 @@
       <tr>
         <td><%= earning.business %></td>
         <td><%= earning.amount %></td>
-        <td><%= earning.user_id %></td>
-        <td><%= earning.date %></td>
+        <td><%= earning.date_format %></td>
         <td><%= link_to 'Show', earning, class: 'btn btn-primary btn-sm' %></td>
         <td><%= link_to 'Edit', edit_earning_path(earning), class: 'btn btn-info btn-sm' %></td>
         <td><%= link_to 'Destroy', earning, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>

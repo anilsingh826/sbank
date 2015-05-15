@@ -5,7 +5,7 @@ class ExpenseAccountsController < ApplicationController
   respond_to :html
 
   def index
-    @expense_accounts = ExpenseAccount.all
+    @expense_accounts = current_user.expense_accounts.all
     respond_with(@expense_accounts)
   end
 
@@ -14,7 +14,7 @@ class ExpenseAccountsController < ApplicationController
   end
 
   def new
-    @expense_account = ExpenseAccount.new
+    @expense_account = current_user.expense_accounts.new
     respond_with(@expense_account)
   end
 
@@ -22,7 +22,7 @@ class ExpenseAccountsController < ApplicationController
   end
 
   def create
-    @expense_account = ExpenseAccount.new(expense_account_params)
+    @expense_account = current_user.expense_accounts.new(expense_account_params)
     @expense_account.save
     respond_with(@expense_account)
   end
@@ -39,7 +39,7 @@ class ExpenseAccountsController < ApplicationController
 
   private
     def set_expense_account
-      @expense_account = ExpenseAccount.find(params[:id])
+      @expense_account = current_user.expense_accounts.find(params[:id])
     end
 
     def expense_account_params

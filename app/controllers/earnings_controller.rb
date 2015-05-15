@@ -5,7 +5,7 @@ class EarningsController < ApplicationController
   respond_to :html
 
   def index
-    @earnings = Earning.all
+    @earnings = current_user.earnings.all
     respond_with(@earnings)
   end
 
@@ -14,7 +14,7 @@ class EarningsController < ApplicationController
   end
 
   def new
-    @earning = Earning.new
+    @earning = current_user.earnings.new
     respond_with(@earning)
   end
 
@@ -22,7 +22,7 @@ class EarningsController < ApplicationController
   end
 
   def create
-    @earning = Earning.new(earning_params)
+    @earning = current_user.earnings.new(earning_params)
     @earning.save
     respond_with(@earning)
   end
@@ -39,7 +39,7 @@ class EarningsController < ApplicationController
 
   private
     def set_earning
-      @earning = Earning.find(params[:id])
+      @earning = current_user.earnings.find(params[:id])
     end
 
     def earning_params
