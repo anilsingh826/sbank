@@ -1,28 +1,56 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Subject: Potluck Party for Our Team in Gurugram - Don't Forget Your Dish!
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Dear [Teammate's Name],
+
+We're excited to announce our upcoming potluck party at our Gurugram location on April 26th at 2 PM. We're looking forward to enjoying some great food and spending some quality time with our colleagues outside of work.
+
+To make the potluck party a success, we kindly ask you to bring your favorite dish or snack to share with the team. It could be anything from homemade meals, snacks, desserts, or even drinks. We want to make sure everyone has a chance to enjoy a variety of dishes, so we ask that you kindly include the name of your dish below:
+
+We will provide plates, cutlery, and napkins, but if you have any dietary restrictions, please let us know in advance so that we can make appropriate arrangements.
+
+This potluck will be a great opportunity for us to bond outside of work and get to know each other better. We believe that it will be a fun and relaxing time, and we hope that you can join us.
+
+Please RSVP by April 23rd so that we can have an accurate headcount for the event. If you have any questions or concerns, please feel free to reach out to me or [Teammate's Name]. We're looking forward to seeing you and enjoying your delicious dishes!
+
+Best regards,
+
+[Your Name]
+
+
+Subject: Potluck Party for Our Team in Gurugram - Save the Date!
+
+Dear [Teammate's Name],
+
+It's been a busy year so far, and we think it's time to unwind and have some fun with our colleagues. That's why we are organizing a potluck party for our team and we want you to join us!
+
+The event will be held at our Gurugram location on April 26th at 2 PM. We encourage everyone to bring their favorite dish or snack to share with the team. It could be anything from homemade meals, snacks, desserts, or even drinks. Let's make it a diverse and delicious spread!
+
+We will provide plates, cutlery, and napkins, but if you have any dietary restrictions, please let us know in advance so that we can make appropriate arrangements.
+
+This potluck will be a great opportunity for us to bond outside of work and get to know each other better. We believe that it will be a fun and relaxing time, and we hope that you can join us.
+
+Please RSVP by April 23rd so that we can have an accurate headcount for the event. If you have any questions or concerns, please feel free to reach out to me or [Teammate's Name]. We can't wait to see you there!
+
+Best regards,
+
+[Your Name]
+
+
+Subject: Potluck Party for Our Team - Join Us!
+
+Dear [Teammate's Name],
+
+As we've been working hard lately, it's time to take a break and enjoy some good food together. That's why we are organizing a potluck party for our team and we want you to be a part of it!
+
+We're excited to announce that the event will take place on [Date] at [Time] in [Location]. We want to make this event as special as possible, so we're encouraging everyone to bring their favorite dish or snack to share with the team. It could be anything from homemade meals, snacks, desserts, or even drinks. Let's make it a diverse and delicious spread!
+
+To make it more fun, we'll have a banner with the words "Potluck Party" for you to take pictures with. We will provide plates, cutlery, and napkins, but if you have any dietary restrictions, please do let us know in advance so that we can make appropriate arrangements.
+
+This potluck will be a great opportunity for us to bond outside of work and get to know each other better. We believe that it will be a fun and relaxing time, and we hope that you can join us.
+
+Please RSVP by [Date] so that we can have an accurate headcount for the event. If you have any questions or concerns, please feel free to reach out to me or [Teammate's Name]. We can't wait to see you there!
+
+Best regards,
+
+[Your Name]
